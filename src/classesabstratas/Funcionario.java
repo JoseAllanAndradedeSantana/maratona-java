@@ -2,8 +2,8 @@ package classesabstratas;
 
 public abstract class Funcionario {
 
-    private String nome;
-    private double salario;
+    protected String nome;
+    protected double salario;
 
     public Funcionario() {
     }
@@ -29,11 +29,5 @@ public abstract class Funcionario {
         this.salario = salario;
     }
 
-    @Override
-    public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
-                ", salario=" + salario +
-                '}';
-    }
+
 }
