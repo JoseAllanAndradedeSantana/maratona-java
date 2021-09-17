@@ -1,4 +1,4 @@
-package eenum;
+package enums;
 
 public enum TipoPagamento {
     CREDITO("Credito"),

@@ -1,6 +1,4 @@
-package eenum;
-
-import java.util.Objects;
+package enums;
 
 public class Cliente {
     private String name;

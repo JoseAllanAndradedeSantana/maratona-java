@@ -1,4 +1,4 @@
-package eenum;
+package enums;
 
 public enum TipoCliente {
     PESSOA_FISICA,
