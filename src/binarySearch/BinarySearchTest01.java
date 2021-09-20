@@ -12,7 +12,7 @@ public class BinarySearchTest01 {
 		numeros.add(8);
 		
 		Collections.sort(numeros);
-		System.out.println(Collections.binarySearch(numeros, 1));
+		System.out.println(Collections.binarySearch(numeros, 5));
 		
 	}
 

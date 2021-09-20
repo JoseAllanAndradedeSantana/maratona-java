@@ -15,8 +15,17 @@ public class IteratorTest {
 		
 		Iterator<Produto> produtos = produto.iterator();
 		while(produtos.hasNext()) {
-			produtos.next();
+			System.out.println(produtos.next());
+			Produto prod = new Produto();
+			if(prod.getPreco() < 25){
+
+				produtos.remove();
+
+			}
+
 		}
+
+
 		
 		//produtos.removeIf();
 	}
