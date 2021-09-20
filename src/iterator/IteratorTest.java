@@ -14,15 +14,16 @@ public class IteratorTest {
 		produto.add(new Produto(1L,"Coca cola 2 Litros",40.0,65));
 		
 		Iterator<Produto> produtos = produto.iterator();
+
 		while(produtos.hasNext()) {
-			System.out.println(produtos.next());
-			Produto prod = new Produto();
-			if(prod.getPreco() < 25){
+			//System.out.println(produtos.next());
+			Produto prod =  produtos.next();
+			if(prod.getPreco() < 25.0){
 
 				produtos.remove();
 
 			}
-
+			System.out.println(produto);
 		}
 
 
