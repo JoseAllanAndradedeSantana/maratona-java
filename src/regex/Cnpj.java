@@ -23,10 +23,13 @@ public class Cnpj {
         Matcher matcher = pattern.matcher(cnpj);
 
 
-        while (matcher.find()) {
-            System.out.print(matcher.start() + " " + matcher.group() + "\n");
+
+        if (matcher.find()) {
+            System.out.print(matcher.start() + " O CNPJ é válido " + matcher.group() + "\n");
 
 
+        }else {
+            System.out.println("Error");
         }
 
     }
