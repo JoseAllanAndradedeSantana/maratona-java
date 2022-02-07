@@ -35,5 +35,6 @@ public class LocalDateTest01 {
         System.out.println(localDate2);
         LocalDate today = LocalDate.now();
         System.out.println(today);
+        System.out.println(localDate.getMonth().minus(2L));
     }
 }

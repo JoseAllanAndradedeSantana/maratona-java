@@ -9,7 +9,7 @@ public class DateTest01 {
 
         Date date2 = new Date();
         System.out.println(date2.getTime());// long 1632085085154 19/09/2021
-        date2.setTime(date2.getTime() + 3_600_000);
+        date2.setTime(date2.getTime() - 3_600_000);
         System.out.println(date2);
 
     }
