@@ -12,7 +12,7 @@ public class PatternMatcherTest01 {
         Matcher matcher = pattern.matcher(texto);
 
         while(matcher.find()){
-            System.out.print(matcher.start()+" ");
+            System.out.print(matcher.start()+" " +matcher.group() + " ");
         }
     }
 }
