@@ -1,4 +1,4 @@
-package estudos.operadores;
+package estudos.operadoresestruturascondicionais;
 
 public class Aula05EstruturaCondicionais02 {
     public static void main(String[] args) {

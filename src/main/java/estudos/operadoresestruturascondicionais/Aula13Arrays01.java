@@ -7,6 +7,8 @@ public class Aula13Arrays01 {
         idades[1] = 28;
         idades[2] = 13;
 
+        System.out.println("Endereco em memoria "+idades);
+
         for (int i = 0; i <3 ; i++) {
             System.out.println(idades[i]);
 
