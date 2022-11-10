@@ -14,10 +14,10 @@ public class TesteConexao {
 		final String senha = "1234";		
 		Connection connection = DriverManager.getConnection(url, usuario, senha);
 		System.out.println(url);
-		System.out.println("Usuário: "+usuario);
+		System.out.println("Usuario: "+usuario);
 		System.out.println(senha);
 		
-		System.out.println("Conexão efetuada com sucesso");
+		System.out.println("Conexao efetuada com sucesso");
 		connection.close();
 	}
 

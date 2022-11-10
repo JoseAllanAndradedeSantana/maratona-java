@@ -5,6 +5,8 @@ public class Aula08Estrutura {
     public static void main(String[] args) {
         byte dia = 5;
 
+        String t = "\u2B50";
+        System.out.println("\u2B50[44m"+ t);
         switch (dia) {
             case 1:
                 System.out.println("Domingo");

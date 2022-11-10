@@ -5,7 +5,7 @@ public class Aula04Operadores {
         int numero1 = 10;
         int numero2 = 20;
         int soma = numero1+numero2;
-        int resto = 20 % 2;
+        int resto = 21 % 2;
         if(resto != 0){
             System.out.println("teste");
         }else {

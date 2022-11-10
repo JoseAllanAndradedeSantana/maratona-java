@@ -10,7 +10,7 @@ import java.util.List;
 public class ConsultarProduto {
 	public static void main(String[] args) throws SQLException {
 		Connection conexao = FabricaConexao.getConexao();
-		String sql = "SELECT * FROM produto";
+		String sql = "SELECT * FROM tb_produtos";
 
 		Statement stmt = conexao.createStatement();
 		ResultSet resultado = stmt.executeQuery(sql);
@@ -18,7 +18,7 @@ public class ConsultarProduto {
 		List<Produto> produtos = new ArrayList<>();
 		
 		while(resultado.next()) {
-			int codigo = resultado.getInt("codigo");
+			Long codigo = resultado.getLong("codigoDeBarras");
 			String nome = resultado.getString("nome");
 			double preco = resultado.getDouble("preco");
 			
@@ -26,11 +26,15 @@ public class ConsultarProduto {
 			
 		}
 		for (Produto produto : produtos) {
-			System.out.println(produto.getCodigo()+" - " +produto.getNome()+" R$"+ produto.getPreco());
+			System.out.println(produto.getCodigo()+" - " +produto.getNome()+" R$ "+ produto.getPreco());
 			
 		}
 		
-		produtos.stream().filter(p -> p.getCodigo() > 0).forEach(System.out::println);
+		produtos
+				.stream()
+				.filter(p -> p.getPreco() > 0)
+				.map(Produto::getNome)
+				.forEach(System.out::println);
 		conexao.close();
 	}
 }

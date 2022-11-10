@@ -12,10 +12,7 @@ public class ProcuderRepository {
              Statement stmt = conn.createStatement()) {
             stmt.executeUpdate(sql2);
         } catch (SQLException e) {
-
             e.printStackTrace();
-
-
         }
     }
 }

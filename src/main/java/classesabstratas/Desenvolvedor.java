@@ -12,9 +12,9 @@ public class Desenvolvedor extends Funcionario{
 
     @Override
     public String toString() {
-        return "Desenvolvedor{" +
+        return "Desenvolvedor " +
                 "nome='" + nome + '\'' +
-                ", salario=" + salario +
-                '}';
+                ", salario= " + salario +
+                ' ';
     }
 }

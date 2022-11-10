@@ -35,9 +35,7 @@ public class Pilha {
         String stringRetorno = "---------------\n";
         stringRetorno += "   Pilha \n";
         stringRetorno += "---------------\n";
-
         No noAuxiliar = refNoEntradaPilha;
-
         while(true){
             if(noAuxiliar != null){
                 stringRetorno += "[No{dados="+ noAuxiliar.getDado() +"}]\n";

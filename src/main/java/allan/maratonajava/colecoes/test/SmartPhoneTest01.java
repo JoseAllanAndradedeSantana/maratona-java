@@ -18,9 +18,11 @@ public class SmartPhoneTest01 {
         smartPhones.add(s3);
         smartPhones.add(s4);
         System.out.println(smartPhones.contains(s4));
+        int indexOf = smartPhones.indexOf(s4);
+        System.out.println(smartPhones.get(indexOf));
 
         for (SmartPhone smartPhone : smartPhones){
-            System.out.println(smartPhone);
+            System.out.println(smartPhone.getMarca());
 
         }
     }

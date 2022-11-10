@@ -1,5 +1,6 @@
 package polimorfismo.test;
 
+import polimorfismo.domain.Combustivel;
 import polimorfismo.domain.Computador;
 import polimorfismo.domain.Tv;
 import polimorfismo.service.CalcularImposto;
@@ -12,5 +13,8 @@ public class ProdutoTest03 {
 
         Tv tv = new Tv("Samsung s10",2000);
         CalcularImposto.calcularImposto(tv);
+
+        Combustivel c = new Combustivel("Gasolina Comum", 8);
+        CalcularImposto.calcularImposto(c);
     }
 }

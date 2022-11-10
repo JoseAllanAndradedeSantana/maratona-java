@@ -20,5 +20,9 @@ public class NumberFormatTest02 {
             System.out.println(ns.format(valor));
 
         }
+
+        String valorString = "1000.20";
+        double v = Double.parseDouble(valorString);
+        System.out.println(v);
     }
 }

@@ -12,12 +12,12 @@ public class Insert {
 		System.out.println("Cadastrar Produto:");
 
 		String nome = en.nextLine();
-		System.out.println("Cadastrar Preço:");
+		System.out.println("Cadastrar Preï¿½o:");
 		int preco = en.nextInt();
 		
 		Connection conexao = FabricaConexao.getConexao();
 
-		String sql = "INSERT INTO produto (nome, preco) VALUES (?,?)";
+		String sql = "INSERT INTO tb_produtos (codigoDeBarras,nome, preco,quantidade) VALUES (1,?,?,1)";
 		PreparedStatement stmt = conexao.prepareStatement(sql);
 		stmt.setString(1, nome);
 		stmt.setInt(2, preco);

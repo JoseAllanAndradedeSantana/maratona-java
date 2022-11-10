@@ -9,7 +9,7 @@ public class CriandoStream {
 		
 		Consumer<String> print = System.out::print;
 		Stream<String> langs = Stream.of("Java ","Node.js ","Python ","SQL");
-		
+		print.accept("te");
 		langs.forEach(print);
 	}
 

@@ -16,21 +16,14 @@ public class Cnpj {
                 "cnpj='" + cnpj + '\'' +
                 '}';
     }
-
     void validarCnpj() {
         String regex2 = "^[0-9]{2}\\.?[0-9]{3}\\.?[0-9]{3}/[0-9]{4}?-[0-9]{2}$";
         Pattern pattern = Pattern.compile(regex2);
         Matcher matcher = pattern.matcher(cnpj);
-
-
-
         if (matcher.find()) {
-            System.out.print(matcher.start() + " O CNPJ é válido " + matcher.group() + "\n");
-
-
+            System.out.print(matcher.start() + " O CNPJ e valido " + matcher.group() + "\n");
         }else {
             System.out.println("Error");
         }
-
     }
 }

@@ -15,6 +15,8 @@ public class PatternMatcherTest03 {
         // ? zero ou uma
         // * zero ou mais
         // + uma ou mais
+        //()
+        //|
         //{nm} n p m
         //$ fim da linha
         String regex = "([a-zA-Z0-9\\._-])+@([a-z])+(\\.([a-z])+)+";

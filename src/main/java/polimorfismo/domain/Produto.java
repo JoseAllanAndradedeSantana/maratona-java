@@ -1,7 +1,9 @@
 package polimorfismo.domain;
 
+import polimorfismo.repository.Imposto;
+
 public abstract class Produto implements Imposto {
-    protected   String name;
+    protected  String name;
     protected double valor;
 
     public Produto(String name, double valor) {

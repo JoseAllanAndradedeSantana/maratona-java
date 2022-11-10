@@ -30,7 +30,7 @@ class ObterProximoDiaUtil implements TemporalAdjuster {
     }
 }
 
-public class TemporalAdjusterTest01 {
+public class TemporalAdjusterTest02 {
     public static void main(String[] args) {
         LocalDate now = LocalDate.now();
         System.out.println(now);

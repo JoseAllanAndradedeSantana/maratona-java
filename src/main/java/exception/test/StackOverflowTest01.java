@@ -9,6 +9,6 @@ public class StackOverflowTest01 {
     }
 
     public static void recursividade(){
-        recursividade();;
+        recursividade();
     }
 }

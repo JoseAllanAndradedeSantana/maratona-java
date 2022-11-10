@@ -4,7 +4,15 @@ import java.io.*;
 
 public class TryWithResources {
     public static void main(String[] args) {
+        lerArquivo();
+    }
 
+    private static void readFile(){
+        try(Reader reader = new BufferedReader(new FileReader("oracao.txt"))){
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     private static void lerArquivo() {

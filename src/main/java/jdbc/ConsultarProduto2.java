@@ -14,7 +14,7 @@ public class ConsultarProduto2 {
 	public static void main(String[] args) throws SQLException {
 		Scanner en = new Scanner(System.in);
 		Connection conexao = FabricaConexao.getConexao();
-		String sql = "SELECT * FROM produto WHERE nome like?;";
+		String sql = "SELECT * FROM tb_produto WHERE nome like?;";
 
 		System.out.println("====================================");
 		String p = en.nextLine();
@@ -27,7 +27,7 @@ public class ConsultarProduto2 {
 		List<Produto> produtos = new ArrayList<>();
 
 		while (resultado.next()) {
-			int codigo = resultado.getInt("codigo");
+			Long codigo = resultado.getLong("codigoDeBarras");
 			String nome = resultado.getString("nome");
 			double preco = resultado.getDouble("preco");
 

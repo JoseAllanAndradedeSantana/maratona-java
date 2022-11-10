@@ -7,7 +7,7 @@ public class Foreach {
 	
 	public static void main(String[] args) {
 		
-		List<String> aprovados = Arrays.asList("Allan","Mariane","Isaque");		
+		List<String> aprovados = Arrays.asList("Allan","Mariane","Isaac");
 		System.out.println("For Tradicional !!!");
 		for (String nome : aprovados) {
 			System.out.println("Aprovado: "+nome);

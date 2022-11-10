@@ -13,7 +13,7 @@ public class PredicateComposicao {
 				numero -> numero >= 100 && numero <= 999;
 		
 				
-		System.out.println(isPar.and(tresDigitos).test(100));
+		System.out.println(isPar.and(tresDigitos).test(1000));
 		System.out.println(tresDigitos.test(500));
 	}
 

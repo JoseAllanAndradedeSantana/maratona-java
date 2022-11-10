@@ -18,11 +18,14 @@ public class Professor {
         if(this.seminarios == null) return;
         System.out.println("### Seminarios Cadastrados ###");
         for(Seminario seminario : this.seminarios){
-            System.out.println(seminario.getTitulo());
-            System.out.println(seminario.getLocal().getLocal());
-            System.out.println("### Alunos ###");
+            System.out.println("Titulo: "+seminario.getTitulo());
+            System.out.println("Local: "+seminario.getLocal().getLocal());
+            System.out.println("### Professor ###");
+            System.out.println("Professor: "+this.nome + " " +" Especialidade: " + this.especialidade);
+            System.out.println("### Alunos Cadastrados ###");
+            //if(seminario.getAlunos().length >= 2) return;
             for(Aluno aluno:seminario.getAlunos()){
-                System.out.println("Aluno: "+ aluno.getNome() + "idade "+aluno.getIdade());
+                System.out.println("Aluno: "+ aluno.getNome() + " idade: "+aluno.getIdade());
             }
         }
     }

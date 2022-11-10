@@ -12,7 +12,7 @@ public class Teste {
         System.out.println("Finalizando Cadastro pelo Sistema");
 
         TipoCliente tc = getTipoCliente(te.toUpperCase(Locale.ROOT));
-        System.out.println("Você Cadastrou o Cliente como " + tc.getTipo());
+        System.out.println("Voce Cadastrou o Cliente como " + tc.getTipo());
 
     }
 

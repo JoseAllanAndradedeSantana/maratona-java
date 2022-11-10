@@ -10,6 +10,7 @@ public class Tv extends Produto{
 
     @Override
     public double calcularImpostoProduto() {
+        System.out.println("##### Calculando Imposto Eletro #####");
         return this.valor * IMPOSTO;
     }
 }

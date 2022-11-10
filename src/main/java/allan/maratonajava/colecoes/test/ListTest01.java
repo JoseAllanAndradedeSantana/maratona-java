@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ListTest01 {
     public static void main(String[] args) {
-        List <String> nomes = new ArrayList();
+        List <String> nomes = new ArrayList<>();
         nomes.add("José Allan");
         nomes.add("Andrade de Santana");
 

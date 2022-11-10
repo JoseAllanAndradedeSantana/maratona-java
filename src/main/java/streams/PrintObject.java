@@ -8,6 +8,7 @@ public class PrintObject {
 	public static void main(String[] args) {
 		
 		List<String> aprovados = Arrays.asList("Allan","Mariane","Isaque");
+		aprovados.stream().forEach(System.out::println);
 		
 		 
 		for(int i = 0; i < aprovados.size(); i++) {

@@ -14,7 +14,7 @@ public class QueryAlterar {
 		System.out.println("Informe o codigo do Produto: ");
 		int codigo = en.nextInt();
 		
-		String sql = "SELECT codigo, nome FROM produto WHERE codigo = ?";
+		String sql = "SELECT codigoDeBarras, nome FROM tb_produtos WHERE codigoDeBarras = ?";
 		
 		
 		Connection conexao = FabricaConexao.getConexao();
@@ -23,8 +23,8 @@ public class QueryAlterar {
 		ResultSet r = stmt.executeQuery();
 		
 		if(r.next()) {
-			
-		//	Produto produto = new Produto(produto.getCodigo(), produto.getNome(),produto.getPreco());
+			stmt.setInt(1, codigo);
+			Produto produto;
 		}
 		conexao.close();
 		en.close();

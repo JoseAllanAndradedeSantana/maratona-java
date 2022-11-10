@@ -18,8 +18,8 @@ public class PatternMatcherTest02 {
         // + uma ou mais
         //{nm} n p m
         //$ fim da linha
-        String regex = "ab";
-        String texto = "abaaba";
+        String regex = "\\d";
+        String texto = "abaaba2810";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);

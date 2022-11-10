@@ -1,5 +1,6 @@
 package dates;
 
+import java.time.Clock;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.Calendar;
@@ -36,5 +37,7 @@ public class LocalDateTest01 {
         LocalDate today = LocalDate.now();
         System.out.println(today);
         System.out.println(localDate.getMonth().minus(2L));
+        System.out.println(Clock.systemDefaultZone().getZone());
+
     }
 }

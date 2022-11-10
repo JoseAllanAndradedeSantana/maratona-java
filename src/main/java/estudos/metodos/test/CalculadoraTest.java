@@ -7,5 +7,7 @@ public class CalculadoraTest {
         Calculadora calc = new Calculadora();
         calc.somaDoisNumeros();
         System.out.println("Finalizando Calculadora Test");
+
+        calc.multiplicaDoisNumeros(10,20);
     }
 }

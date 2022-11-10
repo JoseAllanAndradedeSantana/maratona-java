@@ -26,6 +26,8 @@ public class LocaleTest01 {
         System.out.println(dateFormat4.format(calendar.getTime()));
         System.out.println(localeCH.getDisplayCountry());
         System.out.println(localeItaly.getDisplayCountry());
+        System.out.println(localeJP.getDisplayCountry());
+        System.out.println(localeCH.getDisplayCountry());
     }
 
 }

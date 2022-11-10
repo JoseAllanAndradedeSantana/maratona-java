@@ -5,6 +5,8 @@ public class Cliente {
     private TipoCliente tipoCliente;
     private TipoPagamento tipoPagamento;
 
+    //private String descricao;
+
 
     public Cliente() {
     }

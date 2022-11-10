@@ -2,11 +2,9 @@ package com.jaas.estruturadedados.fila;
 
 public class Fila<T> {
     private No<T> refNoEntradaFila;
-
     public Fila(){
         this.refNoEntradaFila = null;
     }
-
     public T first(){
         if(!this.isEmpty()){
             No primeiroNo = refNoEntradaFila;

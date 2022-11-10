@@ -5,12 +5,12 @@ import java.util.Locale;
 
 public class NumberFormatTest01 {
     public static void main(String[] args) {
-        Locale localePT = new Locale("pt","BR");
+        Locale localeBR = new Locale("pt","BR");
         Locale localeJP = Locale.JAPAN;
         Locale localeIT = Locale.ITALY;
         NumberFormat[] numberFormats = new NumberFormat[4];
         numberFormats[0] = NumberFormat.getInstance();
-        numberFormats[1] = NumberFormat.getInstance(localePT);
+        numberFormats[1] = NumberFormat.getInstance(localeBR);
         numberFormats[2] = NumberFormat.getInstance(localeIT);
         numberFormats[3] = NumberFormat.getInstance(localeJP);
         
@@ -18,7 +18,6 @@ public class NumberFormatTest01 {
 
         for (NumberFormat ns : numberFormats){
             System.out.println(ns.format(valor));
-
         }
     }
 }

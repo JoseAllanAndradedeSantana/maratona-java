@@ -2,10 +2,12 @@ package dates;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class  DateFormatTest01 {
     public static void main(String[] args) {
         Calendar calendar = Calendar.getInstance();
+        Date dt = new Date();
         DateFormat[] df = new DateFormat[7];
         df[0] = DateFormat.getInstance();
         df[1] = DateFormat.getDateInstance();
@@ -16,9 +18,7 @@ public class  DateFormatTest01 {
         df[6] = DateFormat.getDateInstance(DateFormat.FULL);
 
         for (DateFormat datas : df) {
-
-            System.out.println(datas.format(calendar.getTime()));
-
+            System.out.println(datas.format(dt.getTime()));
         }
     }
 }
