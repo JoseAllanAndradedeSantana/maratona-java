@@ -11,7 +11,8 @@ public class PeriodTest01 {
         LocalDate meet = LocalDate.of(2016, Month.SEPTEMBER,12);
         Period p1 = Period.ofWeeks(27);
         Period p2 = Period.between(meet,now);
+        System.out.println(meet);
+        System.out.println(now);
         System.out.println(p2);
-        System.out.println(p1);
     }
 }
