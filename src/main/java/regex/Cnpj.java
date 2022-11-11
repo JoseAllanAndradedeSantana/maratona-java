@@ -23,7 +23,7 @@ public class Cnpj {
         if (matcher.find()) {
             System.out.print(matcher.start() + " O CNPJ e valido " + matcher.group() + "\n");
         }else {
-            System.out.println("Error");
+           throw new IllegalArgumentException("Erro ao digitar CNPJ");
         }
     }
 }

@@ -8,7 +8,7 @@ public class PatternMatcherTest02 {
 
         // \d = return all digits
         // \D = return not all digits
-        // \s = return all space in white
+        // \s = return all space in white \t \n \f \r
         // \S = not return space in white
         // \w = a-zA-Z, digitis _
         // \W = inverse \w
@@ -18,14 +18,19 @@ public class PatternMatcherTest02 {
         // + uma ou mais
         //{nm} n p m
         //$ fim da linha
+        //() agrupamento
+        // | ou Or
         String regex = "\\d";
         String texto = "abaaba2810";
+        String regexHexaDecimal = "0[xX]([0-9a-fA-F])+(\\s|$)";
+        String textoHexaDecimal = "12 0x 0x 0xFFABC 0x10G 0x1";
 
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(texto);
+        Pattern pattern = Pattern.compile(regexHexaDecimal);
+        Matcher matcher = pattern.matcher(textoHexaDecimal);
+        System.out.println(matcher);
 
         while(matcher.find()){
-            System.out.print(matcher.start()+" "+  matcher.group()+ "\n");
+            System.out.print(matcher.start()+" "+  matcher.group()+ " ");
         }
     }
 }

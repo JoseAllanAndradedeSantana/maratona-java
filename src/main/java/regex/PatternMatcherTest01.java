@@ -11,8 +11,14 @@ public class PatternMatcherTest01 {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
 
+        System.out.println("texto:  "+texto);
+        System.out.println("indice: 0123456789");
+        System.out.println("regex "+regex);
+        System.out.println("Posicoes encontradas");
+
         while(matcher.find()){
-            System.out.print(matcher.start()+" " +matcher.group() + " ");
+            System.out.print(
+                    matcher.start()+" " +matcher.group() + " ");
         }
     }
 }
