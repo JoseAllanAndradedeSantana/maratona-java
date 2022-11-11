@@ -19,6 +19,10 @@ public class PatternMatcherTest03 {
         //|
         //{nm} n p m
         //$ fim da linha
+        //() agrupamento
+        // | ou Or
+        //. 1.3
+        // ^
         String regex = "([a-zA-Z0-9\\._-])+@([a-z])+(\\.([a-z])+)+";
         String texto = "allan_santana2810@hotmail.com, allan_santana2810@icloud.com.br, teste";
 
